@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title> Shopping Site- Products</title>
+    <style>
+        #checkout{
+            font-size: large;
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            background-color: rgb(52, 63, 212);
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #checkout:hover{
+            background-color: rgb(32, 185, 45);
+            color: rgb(255, 255, 255);
+            font-weight: bolder;
+        }
+        .totalsec{
+            text-align: center;
+            align-items: center;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #message{
+            margin-top: 30px;
+            font-size: 4vh;
+            color: rgb(15, 163, 64);
+            border: 1px solid rgb(77, 75, 75);
+        }
+
+    </style>
 </head>
 
 <body>
@@ -20,163 +51,183 @@
             </ul>
         </nav>
     </header>
-    <div class="home">
-        <h1>Products</h1>
-        <p>
-            Buy phone, television and laptop at the best prices.
-        </p>
-    </div>
+    <div class="maindiv">
+        <div class="product">
+            <section class="grid-container">
+                <h2>
+                    Best Phones
+                </h2>
+                <div class="phone-grid-container">
+                    <div class="sub-grid-item">
+                        <img src="images/15.png" alt="Phone">
+                        <h3>Iphone 15 PRO MAX</h3>
+                        <div class="description">
+                            <p class="price">Price: $1,199.99</p>
+                            <p class="details">
+                                The Iphone 15 PRO MAX comes with the latest A15 Bionic processor, delivering
+                                exceptional speed and efficiency. With its advanced camera system, stunning
+                                display, and powerful performance, it's the perfect companion for your daily
+                                tasks and entertainment needs.
+                            </p>
+                            <button type="button" class="button" onclick="addToCart('Iphone 15 PRO MAX', 1199.99)">Buy
+                                Now</button>
+                        </div>
 
-    <section class="grid-container">
-        <h2>
-            Best Phones
-        </h2>
-        <div class="phone-grid-container">
-            <div class="sub-grid-item">
-                <img src="images/15.png" alt="Phone">
-                <h3>Iphone 15 PRO MAX</h3>
-                <div class="description">
-                    <p class="price">Price: $1,199.99</p>
-                    <p class="details">
-                        The Iphone 15 PRO MAX comes with the latest A15 Bionic processor, delivering
-                        exceptional speed and efficiency. With its advanced camera system, stunning
-                        display, and powerful performance, it's the perfect companion for your daily
-                        tasks and entertainment needs.
-                    </p>
-                    <button type="button" class="button">Buy Now</button>
+                    </div>
+                    <div class="sub-grid-item">
+                        <img src="images/24.png" alt="Phone">
+                        <h3>Samsung Galaxy S24</h3>
+                        <div class="description">
+                            <p class="price">Price: $1,099.99</p>
+                            <p class="details">
+                                The Samsung Galaxy S24 is designed to provide you with the best experience
+                                possible. It features a powerful Exynos 2200 processor, a stunning AMOLED
+                                display, and a versatile camera system. With its sleek design and advanced
+                                features, it's the perfect choice for anyone looking for a premium smartphone.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('Samsung Galaxy S24', 1099.99)">Buy
+                            Now</button>
+                    </div>
+                    <div class="sub-grid-item">
+                        <img src="images/8.png" alt="Phone">
+                        <h3>Google Pixel 8 pro</h3>
+                        <div class="description">
+                            <p class="price">Price: $999.99</p>
+                            <p class="details">
+                                The Google Pixel 33 is designed to provide you with the best experience
+                                possible. It features a powerful Tensor processor, a stunning OLED display,
+                                and a versatile camera system. With its sleek design and advanced features,
+                                it's the perfect choice for anyone looking for a premium smartphone.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('Google Pixel 8 pro', 999.99)">Buy
+                            Now</button>
+                    </div>
                 </div>
+            </section>
+            <section class="grid-container">
+                <h2>
+                    Best Televisions
+                </h2>
+                <div class="tv-grid-container">
+                    <div class="sub-grid-item">
+                        <img src="images/1.png" alt="TV">
+                        <h3>
+                            Samsung 65" QLED TV
+                        </h3>
+                        <div class="description">
+                            <p class="price">Price: $1,999.99</p>
+                            <p class="details">
+                                The Samsung 65" QLED TV is designed to provide you with the best viewing
+                                experience possible. It features a stunning QLED display, powerful Quantum
+                                Processor, and a range of smart features. With its sleek design and advanced
+                                technology, it's the perfect choice for anyone looking for a premium TV.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('Samsung 65inch QLED TV', 1999.99)"> Buy
+                            Now</button>
+                    </div>
+                    <div class="sub-grid-item">
+                        <img src="images/2.png" alt="TV">
+                        <h3>Sony 55" OLED TV</h3>
+                        <div class="description">
+                            <p class="price">Price: $1,799.99</p>
+                            <p class="details">
+                                The Sony 55" OLED TV is designed to provide you with the best viewing
+                                experience possible. It features a stunning OLED display, powerful X1
+                                Processor, and a range of smart features. With its sleek design and advanced
+                                technology, it's the perfect choice for anyone looking for a premium TV.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('Sony 55inch OLED TV', 1799.99)"> Buy
+                            Now</button>
+                    </div>
+                    <div class="sub-grid-item">
+                        <img src="images/3.png" alt="TV">
+                        <h3>Lg 75" NanoCell TV</h3>
+                        <div class="description">
+                            <p class="price">Price: $2,199.99</p>
+                            <p class="details">
+                                The LG 75" NanoCell TV is designed to provide you with the best viewing
+                                experience possible. It features a stunning NanoCell display, powerful a9
+                                Processor, and a range of smart features. With its sleek design and advanced
+                                technology, it's the perfect choice for anyone looking for a premium TV.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('Lg 75inch NanoCell TV', 2199.99)"> Buy
+                            Now</button>
+                    </div>
+            </section>
+            <section class="grid-container">
+                <h2>
+                    Best Laptops
+                </h2>
+                <div class="laptop-grid-container">
+                    <div class="sub-grid-item">
+                        <img src="images/11.png" alt="Laptop">
+                        <h3>Apple Macbook M3 Pro</h3>
+                        <div class="description">
+                            <p class="price">Price: $2,499.99</p>
+                            <p class="details">
+                                The Apple Macbook Pro is designed to provide you with the best experience
+                                possible. It features a powerful M1 Pro chip, a stunning Retina display, and a
+                                range of advanced features. With its sleek design and powerful performance, it's
+                                the perfect choice for anyone looking for a premium laptop.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('Apple Macbook M3 Pro', 2499.99)"> Buy
+                            Now</button>
+                    </div>
+                    <div class="sub-grid-item">
+                        <img src="images/12.png" alt="Laptop">
+                        <h3> Asus Rog Laptop</h3>
+                        <div class="description">
+                            <p class="price">Price: $2,299.99</p>
+                            <p class="details">
+                                The Asus Rog Laptop is designed to provide you with the best experience
+                                possible. It features a powerful Intel Core i9 processor, a stunning 4K display,
+                                and a range of advanced features. With its sleek design and powerful performance,
+                                it's the perfect choice for anyone looking for a premium laptop.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('Asus Rog Laptop', 2299.99)"> Buy
+                            Now</button>
 
-            </div>
-            <div class="sub-grid-item">
-                <img src="images/24.png" alt="Phone">
-                <h3>Samsung Galaxy S24</h3>
-                <div class="description">
-                    <p class="price">Price: $1,099.99</p>
-                    <p class="details">
-                        The Samsung Galaxy S24 is designed to provide you with the best experience
-                        possible. It features a powerful Exynos 2200 processor, a stunning AMOLED
-                        display, and a versatile camera system. With its sleek design and advanced
-                        features, it's the perfect choice for anyone looking for a premium smartphone.
-                    </p>
+                    </div>
+                    <div class="sub-grid-item">
+                        <img src="images/13.png" alt="Laptop">
+                        <h3>MSI Gaming Laptop</h3>
+                        <div class="description">
+                            <p class="price">Price: $2,399.99</p>
+                            <p class="details">
+                                The MSI Gaming Laptop is designed to provide you with the best experience
+                                possible. It features a powerful AMD Ryzen 9 processor, a stunning 240Hz display,
+                                and a range of advanced features. With its sleek design and powerful performance,
+                                it's the perfect choice for anyone looking for a premium laptop.
+                            </p>
+                        </div>
+                        <button type="button" class="button" onclick="addToCart('MSI Gaming Laptop', 2399.99)"> Buy
+                            Now</button>
+                    </div>
                 </div>
-                <button type="button" class="button">Buy Now</button>
-            </div>
-            <div class="sub-grid-item">
-                <img src="images/8.png" alt="Phone">
-                <h3>Google Pixel 8 pro</h3>
-                <div class="description">
-                    <p class="price">Price: $999.99</p>
-                    <p class="details">
-                        The Google Pixel 33 is designed to provide you with the best experience
-                        possible. It features a powerful Tensor processor, a stunning OLED display,
-                        and a versatile camera system. With its sleek design and advanced features,
-                        it's the perfect choice for anyone looking for a premium smartphone.
-                    </p>
-                </div>
-                <button type="button" class="button">Buy Now</button>
-            </div>
+            </section>
         </div>
-    </section>
-    <section class="grid-container">
-        <h2>
-            Best Televisions
-        </h2>
-        <div class="tv-grid-container">
-            <div class="sub-grid-item">
-                <img src="images/1.png" alt="TV">
-                <h3>
-                    Samsung 65" QLED TV
-                </h3>
-                <div class="description">
-                    <p class="price">Price: $1,999.99</p>
-                    <p class="details">
-                        The Samsung 65" QLED TV is designed to provide you with the best viewing
-                        experience possible. It features a stunning QLED display, powerful Quantum
-                        Processor, and a range of smart features. With its sleek design and advanced
-                        technology, it's the perfect choice for anyone looking for a premium TV.
-                    </p>
+        <div id="cartSection">
+            <h2>Cart Details</h2>
+            <table id="cartTable">
+                
+                <tbody id="cartItems">
+                    <!-- Cart items will be dynamically added here -->
+                </tbody>
+            </table>
+            <div class="totalsec">
+                <p>Total: $<span id="cartTotal">0.00</span></p>
+           <button type="button" id="checkout" class="button" onclick="checkout()">Check Out</button>
+           <div id="message"></div>
                 </div>
-                <button type="button" class="button"> Buy Now</button>
-            </div>
-            <div class="sub-grid-item">
-                <img src="images/2.png" alt="TV">
-                <h3>Sony 55" OLED TV</h3>
-                <div class="description">
-                    <p class="price">Price: $1,799.99</p>
-                    <p class="details">
-                        The Sony 55" OLED TV is designed to provide you with the best viewing
-                        experience possible. It features a stunning OLED display, powerful X1
-                        Processor, and a range of smart features. With its sleek design and advanced
-                        technology, it's the perfect choice for anyone looking for a premium TV.
-                    </p>
-                </div>
-                <button type="button" class="button"> Buy Now</button>
-            </div>
-            <div class="sub-grid-item">
-                <img src="images/3.png" alt="TV">
-                <h3>Lg 75" NanoCell TV</h3>
-                <div class="description">
-                    <p class="price">Price: $2,199.99</p>
-                    <p class="details">
-                        The LG 75" NanoCell TV is designed to provide you with the best viewing
-                        experience possible. It features a stunning NanoCell display, powerful a9
-                        Processor, and a range of smart features. With its sleek design and advanced
-                        technology, it's the perfect choice for anyone looking for a premium TV.
-                    </p>
-                </div>
-                <button type="button" class="button"> Buy Now</button>
-            </div>
-    </section>
-    <section class="grid-container">
-        <h2>
-            Best Laptops
-        </h2>
-        <div class="laptop-grid-container">
-            <div class="sub-grid-item">
-                <img src="images/11.png" alt="Laptop">
-                <h3>Apple Macbook M3 Pro</h3>
-                <div class="description">
-                    <p class="price">Price: $2,499.99</p>
-                    <p class="details">
-                        The Apple Macbook Pro is designed to provide you with the best experience
-                        possible. It features a powerful M1 Pro chip, a stunning Retina display, and a
-                        range of advanced features. With its sleek design and powerful performance, it's
-                        the perfect choice for anyone looking for a premium laptop.
-                    </p>
-                </div>
-                <button type="button" class="button"> Buy Now</button>
-            </div>
-            <div class="sub-grid-item">
-                <img src="images/12.png" alt="Laptop">
-                <h3> Asus Rog Laptop</h3>
-                <div class="description">
-                    <p class="price">Price: $2,299.99</p>
-                    <p class="details">
-                        The Asus Rog Laptop is designed to provide you with the best experience
-                        possible. It features a powerful Intel Core i9 processor, a stunning 4K display,
-                        and a range of advanced features. With its sleek design and powerful performance,
-                        it's the perfect choice for anyone looking for a premium laptop.
-                    </p>
-                </div>
-                <button type="button" class="button"> Buy Now</button>
-
-            </div>
-            <div class="sub-grid-item">
-                <img src="images/13.png" alt="Laptop">
-                <h3>MSI Gaming Laptop</h3>
-                <div class="description">
-                    <p class="price">Price: $2,399.99</p>
-                    <p class="details">
-                        The MSI Gaming Laptop is designed to provide you with the best experience
-                        possible. It features a powerful AMD Ryzen 9 processor, a stunning 240Hz display,
-                        and a range of advanced features. With its sleek design and powerful performance,
-                        it's the perfect choice for anyone looking for a premium laptop.
-                    </p>
-                </div>
-                <button type="button" class="button"> Buy Now</button>
-                </div>             
-            </div>
-    </section>
+        </div>
+    </div>
     <br>
     <br>
     <br>
@@ -186,6 +237,9 @@
     <footer>
         <p>&copy; 2024 Sani. All rights reserved.</p>
     </footer>
+    <script src="cart.js">
+    </script>
+
 </body>
 
 </html>
