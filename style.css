@@ -43,7 +43,7 @@ nav a:hover {
 .flex-item {
     width: 25%;
     margin: 15px;
-    padding: 20px;
+    padding: 22px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -92,7 +92,7 @@ nav a:hover {
 .sub-grid-item {
     border: 1px solid #ccc;
     border-radius: 8px;
-    padding: 18px;
+    padding: 15px;
     text-align: center;
     position: relative;
     background-color: rgb(245, 254, 255);
