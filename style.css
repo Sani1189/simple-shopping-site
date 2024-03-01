@@ -71,6 +71,117 @@ nav a:hover {
     font-size: 1em;
     color: #666;
 }
+.grid-container {
+    max-width: 80%;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+.grid-container h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.phone-grid-container,.tv-grid-container,.laptop-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+.sub-grid-item {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+
+.sub-grid-item img {
+    max-width: 80%;
+    max-height: 70%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.sub-grid-item button{
+    margin: 20px auto;
+    width: 50%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+
+}
+.sub-grid-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.sub-grid-item .price {
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 5px;
+}
+.sub-grid-item .details {
+    color: #333;
+    font-size: 0.9em;
+}
+.contact-section {
+    margin: 50px auto;
+    max-width: 80%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.contact-section h2 {
+    margin: auto;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1e13b8;
+    font-weight: bold;
+}
+
+.contact-section form {
+    max-width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section label {
+    text-align: left;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background-color: #007bff; 
+    width: 50%;
+    margin: 20px auto;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
 
 footer {
     margin-top: 100px;
@@ -83,4 +194,7 @@ footer {
 }
 footer p{
     padding: 15px 20px;
+}
+.active{
+    border-bottom: 3px solid red;
 }
