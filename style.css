@@ -165,6 +165,15 @@ nav a:hover {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+.contact-section textarea {
+    height: 200px;
+}
+
+.contact-section input:focus,
+.contact-section textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
 
 .contact-section button {
     background-color: #007bff; 
